@@ -1,4 +1,4 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { QuoteInfoComponent } from './quote-info.component';
 
@@ -6,12 +6,12 @@ describe('QuoteInfoComponent', () => {
   let component: QuoteInfoComponent;
   let fixture: ComponentFixture<QuoteInfoComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
+  beforeEach(async(() => {
+    TestBed.configureTestingModule({
       declarations: [ QuoteInfoComponent ]
     })
     .compileComponents();
-  });
+  }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(QuoteInfoComponent);

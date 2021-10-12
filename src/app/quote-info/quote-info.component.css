@@ -1,0 +1,12 @@
+.author{
+    font-style: italic;
+  }
+  i{
+    color: grey;
+  }
+  .thumb-up{
+    color:#32cd32;
+  }
+  .thumb-down{
+    color: #DC143C;
+  }

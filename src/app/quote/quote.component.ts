@@ -14,10 +14,10 @@ export class QuoteComponent implements OnInit {
     
 
   ];
-  showAuthor(index){
+  showAuthor(index: string | number){
     this.myQuotes[index].moreDetails = !this.myQuotes[index].moreDetails;
   }
-  removeQuote(toDelete,index){
+  removeQuote(toDelete: any,index: number){
     if(toDelete){
       let confirmDelete = confirm('Are you sure you want to delete this quote?');
   
@@ -27,7 +27,7 @@ export class QuoteComponent implements OnInit {
   }
   }
   
-  addNewQuote(myQuote){
+  addNewQuote(myQuote: Quote){
     let myQuoteLength = this.myQuotes.length;
     myQuote.id = myQuoteLength + 1;
     myQuote.datePosted = new Date();

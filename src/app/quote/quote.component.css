@@ -1,0 +1,21 @@
+*{
+
+    font-style:oblique;
+  
+  }
+  .card{
+    width: 600px;
+  
+  }
+  .fas{
+    color: red;
+    position: center;
+  }
+  .card-body{
+    background-image: url("src/assets/bg-cardflowers.jpg");
+    background-position: center;
+  }
+  .card-title{
+    font-size: 20px;
+  }
+  

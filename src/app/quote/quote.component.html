@@ -1,1 +1,16 @@
-<p>quote works!</p>
+<div class="row">
+    <div class="col-md-6">
+          <div class="mr-4 card" *ngFor= 'let myQuote of myQuotes; let i = index'>
+            <div class="card-body">
+              <br><p class="card-title text-white">{{myQuote.title}}</p>
+              <i class="fas fa-quote-left fa-3x"></i>
+              <p class="card-text text-white">{{myQuote.quote}}</p>
+              <button (click)='showAuthor(i)' class="btn btn-info">More...</button><br><br>
+              <app-quote-info *ngIf='myQuote.moreDetails' [quote]='myQuote' (toDelete) = 'removeQuote($event,i)'></app-quote-info>
+            </div>
+          </div>
+    </div>
+    <div class="col-md-6">
+  <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+    </div>
+   </div>

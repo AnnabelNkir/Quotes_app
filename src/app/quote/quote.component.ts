@@ -14,28 +14,28 @@ export class QuoteComponent implements OnInit {
     
 
   ];
-showAuthor(index: string | number){
-  this.myQuotes[index].moreDetails = !this.myQuotes[index].moreDetails;
-}
-removeQuote(toDelete: any,index: number){
-  if(toDelete){
-    let confirmDelete = confirm('Are you sure you want to delete this quote?');
-
-  if(confirmDelete){
-    this.myQuotes.splice(index,1);
+  showAuthor(index){
+    this.myQuotes[index].moreDetails = !this.myQuotes[index].moreDetails;
   }
-}
-}
-
-addNewQuote(myQuote: { id: number; datePosted: Date; }){
-  let myQuoteLength = this.myQuotes.length;
-  myQuote.id = myQuoteLength + 1;
-  myQuote.datePosted = new Date();
-  this.myQuotes.push(myQuote)
-}
-  constructor() { }
-
-  ngOnInit() {
+  removeQuote(toDelete,index){
+    if(toDelete){
+      let confirmDelete = confirm('Are you sure you want to delete this quote?');
+  
+    if(confirmDelete){
+      this.myQuotes.splice(index,1);
+    }
   }
-
-}
+  }
+  
+  addNewQuote(myQuote){
+    let myQuoteLength = this.myQuotes.length;
+    myQuote.id = myQuoteLength + 1;
+    myQuote.datePosted = new Date();
+    this.myQuotes.push(myQuote)
+  }
+    constructor() { }
+  
+    ngOnInit() {
+    }
+  
+  }

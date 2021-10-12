@@ -17,7 +17,7 @@ export class QuoteComponent implements OnInit {
   showAuthor(index: string | number){
     this.myQuotes[index].moreDetails = !this.myQuotes[index].moreDetails;
   }
-  removeQuote(toDelete: any,index: number){
+  removeQuote(toDelete: any,index: number): void{
     if(toDelete){
       let confirmDelete = confirm('Are you sure you want to delete this quote?');
   

@@ -8,9 +8,9 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   myQuotes:Quote[] = [
-    new Quote(1, 'Life Quote', 'Curiosity about life in all of its aspects, I think, is still the secret of great creative people.','Leo Burnett',new Date(2019,9,14)),
-    new Quote(2, 'Health Quote', 'The healthiest response to life is joy.','Deepak Chopra',new Date(2019,6,9)),
-    new Quote(3, 'Wisdom Quote','The best portion of a good man’s life is his little nameless, unencumbered acts of kindness and of love.','Wordsworth',new Date(2019,1,12)),
+    new Quote(1, 'Life Quote', 'Curiosity about life in all of its aspects, I think, is still the secret of great creative people.','Leo Burnett',new Date(2021,10,12)),
+    new Quote(2, 'Health Quote', 'The healthiest response to life is joy.','Deepak Chopra',new Date(2021,10,11)),
+    new Quote(3, 'Wisdom Quote','The best portion of a good man’s life is his little nameless, unencumbered acts of kindness and of love.','Wordsworth',new Date(2021,10,10)),
     
 
   ];
